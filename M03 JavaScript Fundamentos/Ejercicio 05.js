@@ -8,10 +8,11 @@ function esPositivo(num) {
    // Si el número es negativo ---> "Es negativo".
    // Si el número es 0, devuelve false.
    // Tu código:
-   if(esPositivo%1===0){
+   if(esPositivo>0){
       return "Es positivo"}
-      return "Es negativo"
-   }
+      else if(esPositivo<0){
+      return "Es negativo"}
+   } return "false"
 
 
 function agregarSimboloExclamacion(str) {
@@ -25,7 +26,7 @@ function combinarNombres(nombre, apellido) {
    // Retorna "nombre" y "apellido" combinados en un mismo string pero separados por un espacio.
    // Ejemplo: ("Soy", "Henry") ---> "Soy Henry"
    // Tu código:
-   return (nombre + apellido)
+   return (nombre + " " + apellido)
 }
 
 function obtenerSaludo(nombre) {
@@ -66,18 +67,18 @@ function esVocal(letra) {
    // Si el usuario ingresa un string de más de un caracter debes retornar el mensaje: "Dato incorrecto".
    // Si no es vocal, tambien debe retornar "Dato incorrecto".
    // Tu código:
-   if(letra="a"){
+   if(letra=="a"){
       return "Es vocal"
-   } else if(letra="e"){
+   } else if(letra=="e"){
       return "Es vocal";
-   }else if(letra="i"){
+   }else if(letra=="i"){
       return "Es vocal";
-   }else if(letra="o"){
+   }else if(letra=="o"){
       return "Es vocal";
-   }else if(letra="u"){
+   }else if(letra=="u"){
       return "Es vocal";
    }
-   return "Dato Incorrecto"
+   return "Dato incorrecto"
 }
 
 /*⚠️ NO MODIFIQUES NADA DEBAJO DE ESTO ⚠️*/
