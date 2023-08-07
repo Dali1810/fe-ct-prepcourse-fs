@@ -22,7 +22,10 @@ function incrementarPorUno(array) {
    // El arreglo recibido por parámetro contiene números.
    // Retornar un arreglo con los elementos incrementados en +1.
    // Tu código:
-   return array.length + 1;
+   for (let i = 0; i < array.length; i++) {
+      array[i] += 1;
+   }
+   return array;
 }
 
 function agregarItemAlFinalDelArray(array, elemento) {
@@ -62,6 +65,12 @@ function agregarNumeros(arrayOfNums) {
    // El parámetro "arrayOfNums" debe ser un arreglo de números.
    // Suma todos los elementos y retorna el resultado.
    // Tu código:
+   var suma;
+   for (i= 0; i < array.length; i++) {
+      suma += array[i];
+      
+   }
+   return suma
 }
 
 function promedioResultadosTest(resultadosTest) {
@@ -79,6 +88,7 @@ function numeroMasGrande(arrayOfNums) {
    // El parámetro "arrayOfNums" es un arreglo de números.
    // Retornar el número más grande.
    // Tu código:
+   return Math.max(arrayOfNums)
 }
 
 function multiplicarArgumentos() {
@@ -86,18 +96,32 @@ function multiplicarArgumentos() {
    // Si no se pasan argumentos retorna 0. Si se pasa un argumento, simplemente retórnalo.
    // [PISTA]: "arguments" es un arreglo.
    // Tu código:
+   var element = 1
+   if (!arguments || arguments == null){return arguments
+}  for (let index = 0; index < array.length; index++) {
+    element *= array[index];   
+}
+   return element
 }
 
 function cuentoElementos(array) {
    // Desarrolla una función que retorne la cantidad de elementos del arreglo cuyo valor sea mayor que 18.
    // Tu código:
-}
+   let count=0
+   for (let i = 0; i < array.length; i++) {
+      count++; 
+   }return count
+   }
+
 
 function diaDeLaSemana(numeroDeDia) {
    // Supongamos que los días de la semana se codifican como 1 = Domingo, 2 = Lunes y así sucesivamente.
    // Realiza una función que, dado el número del día de la semana, retorne: "Es fin de semana"
    // si el día corresponde a "Sábado" o "Domingo", y "Es dia laboral" en caso contrario.
    // Tu código:
+   if (numeroDeDia%7= 0) {
+      return "Es fin de semana"         
+      } return "Es dia laboral"
 }
 
 function empiezaConNueve(num) {
